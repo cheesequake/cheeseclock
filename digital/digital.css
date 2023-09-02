@@ -29,9 +29,7 @@
     opacity: 70%;
     font-family: 'digital-7';
 }
-.digidate{
-    margin-top: 10px;
-}
+
 
 @media only screen and (max-width:786px) {
     .digitext{
@@ -41,7 +39,7 @@
         font-size: 1.25rem;
     }
 }
-@media only screen and (max-width:410px) {
+@media only screen and (max-width:448px) {
     .digitext{
         font-size: 4rem;
     }
