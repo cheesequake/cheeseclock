@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "digital-7";
+    src: url("../digital-7/digital-7.ttf");
+}
+
+#stopwatch{
+    flex-direction: column;
+    font-family: "digital-7";
+    font-size: 10rem;
+    justify-content: space-around;
+}
+
+#stopcounter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    max-height: 50vh;
+}
+.stoptext{
+    width: 20%;
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#colon3{
+    width: 10%;
+}
+#colon4{
+    width: 10%;
+}
+#stopmilsec{
+    width: 30%;
+}
+.stopbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 15vh;
+    max-height: 15vh;
+}
+
+
+#postplayrow{
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.stoprowelem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#playagainbutton{
+    display: flex;
+}
+
+#postpauserow{
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.disappear{
+    display:none;
+}
+#lapScreen{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-height: 25vh;
+    min-height: 25vh;
+    overflow: scroll;
+    flex-direction: column;
+    width: 50%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+#lapScreen::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.lapDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.lapDivCol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reappear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:968px){
+    .stoptext{
+        font-size: 6rem;
+    }
+}
+@media only screen and (max-width:830px){
+    #lapScreen{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:810px){
+    .stoptext{
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-width:666px){
+    .stoptext{
+        font-size: 4rem;
+    }
+    .stopbuttons{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:524px){
+    .stoptext{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width:324px){
+    .stoptext{
+        font-size: 2rem;
+    }
+}

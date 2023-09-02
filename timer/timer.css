@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "digital-7";
+    src: url("../digital-7/digital-7.ttf");
+}
+
+#timer{
+    flex-direction: column;
+    font-family: 'digital-7';
+    font-size: 8rem;
+}
+
+#actualtimer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    min-height: 75vh;
+    max-height: 75vh;
+}
+#timerpostplayrow{
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+#timerpostpauserow{
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+#timerbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 15vh;
+    max-height: 15vh;
+}
+
+.timertext{
+    font-size: 6rem;
+}
+
+.timercol{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.upbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.downbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inactivebutton{
+    opacity: 50%;
+}
+@media only screen and (max-width:836px){
+    .timertext{
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-width:720px){
+    .timertext{
+        font-size: 4rem;
+    }
+    #timerbuttons{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:568px){
+    .timertext{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width:426px){
+    .timertext{
+        font-size: 2rem;
+    }
+}

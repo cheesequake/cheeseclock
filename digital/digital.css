@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "digital-7";
+    src: url("../digital-7/digital-7.ttf");
+}
+
+#digital{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.colactive{
+    opacity: 0;
+}
+
+#digitime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.digitext{
+    color:black;
+    font-family: 'digital-7';
+    font-size:10rem;
+}
+#dateonli{
+    opacity: 70%;
+    font-family: 'digital-7';
+}
+
+@media only screen and (max-width:786px) {
+    .digitext{
+        font-size: 6rem;
+    }
+    #dateonli{
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width:410px) {
+    .digitext{
+        font-size: 4rem;
+    }
+    #dateonli{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Poppins:wght@500&display=swap');
+#global{
+    filter: none;
+    flex-direction: column;
+    overflow-y: scroll;
+    justify-content: start;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+#global::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+@media only screen and (max-width:1048px){
+    #global{
+        width: 100%;
+    }
+}
+.countryname{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+.countrytime{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.timezonetime{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.flag{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:778px){
+    .countryname{
+        font-size: 0.75rem;
+    }
+    .timezonetime{
+        font-size: 0.75rem;
+    }
+}

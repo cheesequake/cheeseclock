@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Poiret+One&display=swap');
+#analog{
+    flex-direction: column;
+}
+#actualclock{
+    width: 100%;
+    background-image: url("./33735-6-clock-no-hands-clipart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 85vh;
+    max-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:600px){
+    #analog{
+        width: 100%;
+    }
+}
+#dateanalog{
+    min-height: 5vh;
+    max-height: 5vh;
+    font-family: 'Phudu', cursive;
+    font-size: 0.75rem;
+}
+#hourHand{
+    min-height: 10px;
+    width: 130px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    transform-origin: left;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 30%;
+    
+}
+#minuteHand{
+    min-height: 7px;
+    width: 220px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    transform-origin: left;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 30%;
+}
+#secondHand{
+    min-height: 4px;
+    width: 240px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    transform-origin: left;
+    transition-duration: 500ms;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 30%;
+}
+@media only screen and (max-width:764px){
+    #hourHand{
+        width: 90px;
+    }
+    #minuteHand{
+        width: 200px;
+    }
+    #secondHand{
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width:692px){
+    #hourHand{
+        width: 90px;
+    }
+    #minuteHand{
+        width: 170px;
+    }
+    #secondHand{
+        width: 190px;
+    }
+}
+@media only screen and (max-width:600px){
+    #hourHand{
+        width: 100px;
+    }
+    #minuteHand{
+        width: 190px;
+    }
+    #secondHand{
+        width: 240px;
+    }
+}
+@media only screen and (max-width:574px){
+    #hourHand{
+        width: 100px;
+    }
+    #minuteHand{
+        width: 180px;
+    }
+    #secondHand{
+        width: 200px;
+    }
+}
+@media only screen and (max-width:476px){
+    #hourHand{
+        width: 80px;
+    }
+    #minuteHand{
+        width: 150px;
+    }
+    #secondHand{
+        width: 180px;
+    }
+}
+@media only screen and (max-width:432px){
+    #hourHand{
+        width: 80px;
+    }
+    #minuteHand{
+        width: 130px;
+    }
+    #secondHand{
+        width: 150px;
+    }
+}
+@media only screen and (max-width:364px){
+    #hourHand{
+        width: 70px;
+    }
+    #minuteHand{
+        width: 120px;
+    }
+    #secondHand{
+        width: 140px;
+    }
+}
