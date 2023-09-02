@@ -29,7 +29,9 @@
     opacity: 70%;
     font-family: 'digital-7';
 }
-
+.digidate{
+    padding-top: 40px;
+}
 
 @media only screen and (max-width:786px) {
     .digitext{
