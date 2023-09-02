@@ -66,6 +66,14 @@ html::-webkit-scrollbar{
     transition-duration: 300ms;
     cursor: pointer;
 }
+@media only screen and (max-width: 560px){
+    .buttonicons{
+        width: 25px;
+    }
+    .icon img{
+        width: 25px;
+    }
+}
 .display{
     display: flex;
     justify-content: center;
@@ -102,11 +110,6 @@ html::-webkit-scrollbar{
 
 #centermenu{
     width: 50%;
-}
-@media only screen and (max-width:524px){
-    .buttonicons{
-        width: 30px;
-    }
 }
 
 
