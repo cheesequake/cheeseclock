@@ -1,6 +1,6 @@
 setInterval(()=>{
     const loadTime = new Date();
-    document.getElementById("IST").textContent = ((loadTime.getUTCHours()+6)%24).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+":"+((loadTime.getUTCMinutes()+30)%60).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
+    document.getElementById("IST").textContent = ((loadTime.getUTCHours()+5)%24).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+":"+((loadTime.getUTCMinutes()+30)%60).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
     document.getElementById("FINST").textContent = ((loadTime.getUTCHours()+3)%24).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+":"+((loadTime.getUTCMinutes())).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
     if((loadTime.getUTCHours()-5)<0){
         document.getElementById("USAST").textContent = ((24+loadTime.getUTCHours()-5)%24).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+":"+((loadTime.getUTCMinutes())).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
