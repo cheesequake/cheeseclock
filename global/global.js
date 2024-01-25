@@ -17,7 +17,7 @@ const timeZoneMap = [
 ]
 function getTime(){
     timeZoneMap.map(async (e) => {
-        const response = await fetch("http://worldtimeapi.org/api/timezone/"+Object.values(e)[0]);
+        const response = await fetch("https://worldtimeapi.org/api/timezone/"+Object.values(e)[0]);
         const ST = await response.json();
         const time = ST.datetime;
         document.getElementById(Object.keys(e)[0]).textContent = time.substring(11,13).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+":"+time.substring(14,16).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
@@ -26,7 +26,7 @@ function getTime(){
 getTime();
 setInterval(()=>{
     timeZoneMap.map(async (e) => {
-        const response = await fetch("http://worldtimeapi.org/api/timezone/"+Object.values(e)[0]);
+        const response = await fetch("https://worldtimeapi.org/api/timezone/"+Object.values(e)[0]);
         const ST = await response.json();
         const time = ST.datetime;
         document.getElementById(Object.keys(e)[0]).textContent = time.substring(11,13).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+":"+time.substring(14,16).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
